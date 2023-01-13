@@ -4,7 +4,6 @@ const router = express.Router();
 import {
     getAllApplications,
     editApplication,
-    // editApplicationProgress,
     createApplication,
     deleteApplication, 
     getApplicationByID

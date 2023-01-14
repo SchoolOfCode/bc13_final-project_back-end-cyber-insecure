@@ -5,8 +5,13 @@ async function getAllApplications() {
     return allApplications.rows;
   }
 
-  async function getApplicationByID(id) {
-    const specificKnowledge = await query("SELECT * FROM jobApplications WHERE id = $1", [id]);
+  async function getApplicationByID(user_email) {
+    const specificKnowledge = await query("SELECT * FROM jobApplications WHERE id = $1", [user_email]);
+    return specificKnowledge.rows;
+  }
+
+  async function getApplicationByEmail(user_email) {
+    const specificKnowledge = await query("SELECT * FROM jobApplications WHERE user_email = $1", [user_email]);
     return specificKnowledge.rows;
   }
   
@@ -29,6 +34,7 @@ async function getAllApplications() {
     getAllApplications,
     editApplication,
     getApplicationByID,
+    getApplicationByEmail,
     createApplication,
     deleteApplication
   }

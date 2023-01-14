@@ -13,4 +13,4 @@ async function getKnowledgeByTitle(title) {
   export {
     getAllKnowledgeBank,
     getKnowledgeByTitle
-  }
+  } 

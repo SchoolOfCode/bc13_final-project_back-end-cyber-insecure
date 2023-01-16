@@ -17,5 +17,8 @@
     "nodemon": "^2.0.20",
     "pg": "^8.8.0",
     "supertest": "^6.3.3"
+  },
+  "devDependencies": {
+    "jest": "^29.3.1"
   }
 }

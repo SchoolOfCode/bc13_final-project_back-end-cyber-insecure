@@ -32,15 +32,6 @@ describe("Get application by ID", () => {
         // The expected result is an object containing the application data
         const expectedResult = { 
             id: 1,
-            // user_email: "ttt@ttt.com",
-            // job_title: "Software Engineer",
-            // company: "Apple",
-            // job_description: "Job description",
-            // location: "Manchester",
-            // salary: "100,000",
-            // job_link: "www.apple.com/",
-            // notes: "Interview scheduled for next week",
-            // progress: "Applied"
         }
 
         try {
@@ -59,16 +50,8 @@ describe("Get application by email", () => {
         const testEmail = "ttt@ttt.com";
         // The expected result is an object containing the application data
         const expectedResult = {
-            // id: 1,
             user_email: "ttt@ttt.com",
-            // job_title: "Junior Developer",
-            // company: "Oracle",
-            // job_description: "Junior Developer role, you have done it, you are awesome, enjoy!",
-            // location: "Remote",
-            // salary: "9999",
-            // job_link: "www.oracle.com/",
-            // notes: "This job might be for me",
-            // progress: "Research"
+
         }
         try {
             const result = await getApplicationByEmail(testEmail);

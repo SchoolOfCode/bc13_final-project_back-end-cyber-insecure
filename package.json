@@ -5,7 +5,7 @@
   "main": "app.js",
   "type": "module",
   "scripts": {
-    "start": "node -r dotenv/config app.js",
+    "start": "node -r dotenv/config --experimental-modules app.js",
     "dev": "nodemon -r dotenv/config app.js",
     "test": "node --experimental-vm-modules -r dotenv/config node_modules/jest/bin/jest.js"
   },
@@ -15,7 +15,10 @@
     "express": "^4.18.2",
     "morgan": "^1.10.0",
     "nodemon": "^2.0.20",
-    "pg": "^8.8.0",
+    "pg": "^8.8.0"
+  },
+  "devDependencies": {
+    "jest": "^29.3.1",
     "supertest": "^6.3.3"
   }
 }

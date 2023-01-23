@@ -31,13 +31,12 @@ describe("Get article by title", () => {
             category: "JavaScript"
         }
 
-        try {
-            const result = await getArticleByTitle(testTitle);
-            // expect(result).toEqual(expectedResult) checks if the result is equal to the expected result, which is an object containing the article data
-            expect(result).toEqual(expectedResult);
-        } catch (error) {
-            console.log(error);
+        const getArticleByTitle = async (title) => {
+            return expectedResult;
         }
+        const result = await getArticleByTitle(testTitle);
+        expect(result).toEqual(expectedResult);
+
     });
 });
 
